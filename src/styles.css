@@ -16,8 +16,23 @@ body{
   font-weight: 700;
 }
 
+ ul{
+  list-style: none;
+}
+
+
+
+input:focus {
+  outline: none;
+}
+
+button{
+  cursor: pointer;
+}
+
 /* Classes */
 .container{
   width: 350px;
   margin: 50px auto;
+
 }
