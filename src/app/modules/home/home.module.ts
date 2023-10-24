@@ -9,12 +9,14 @@ import { TodoListComponent } from './components/todo-list/todo-list.component';
 
 //Page
 import { HomeComponent } from './pages/home/home.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [HeaderComponent, TodoButtonDeleteAllComponent, TodoInputAddItensComponent, TodoListComponent, HomeComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class HomeModule { }
