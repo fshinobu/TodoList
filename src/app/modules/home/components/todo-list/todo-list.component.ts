@@ -9,8 +9,7 @@ import { TaskList } from '../../model/TaskList';
 export class TodoListComponent implements OnInit {
 
   public taskList: Array<TaskList> = [
-     {task:"item1", checked:true},
-     {task:"item2", checked:false},
+
   ];
 
   public deleteItem(index: number){
@@ -22,6 +21,14 @@ export class TodoListComponent implements OnInit {
 
     if (confirm){
       this.taskList=[];
+    }
+
+  }
+
+  public setEmitTaskList(inputItem: string){
+
+    if(inputItem.trim()){
+      this.taskList.push({task: inputItem, checked:false});
     }
 
   }
