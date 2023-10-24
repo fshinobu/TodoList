@@ -83,9 +83,10 @@ section ul li input[type="text"] {
   border: none;
   font-size: 16px;
   color: #939CBD;
+  font-weight: 700;
 }
 
-section ul li input[type="text"]:checked {
+section ul li input[type="text"].marcado {
   text-decoration: line-through;
 }
 
